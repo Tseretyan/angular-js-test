@@ -1,7 +1,13 @@
-<html>
+<!DOCTYPE html>
+<html ng-app="angular-js-test">
     <head>
+        <script src="angular.js"></script>
+        <script src="app.js"></script>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>AngularJS Test </h1>
+        <div ng-controller="MainController">
+            Test {{say()}}
+        </div>
     </body>
 </html>
