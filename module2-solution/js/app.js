@@ -59,7 +59,7 @@
         };
 
         service.remove = function(idx){
-            if (idx < 0 || items.length > idx) {
+            if (idx < 0 || items.length <= idx) {
                 return;
             }
             return items.splice(idx,1)[0];
@@ -99,7 +99,7 @@
         ctrl.items = GroceryListService.getItems();
 
         ctrl.buyItem = function(idx){
-            var itm = GroceryListService.remove();
+            var itm = GroceryListService.remove(idx);
             EmptyListService.add(itm);
         }
     };
