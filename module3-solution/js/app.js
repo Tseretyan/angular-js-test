@@ -5,7 +5,7 @@
     .controller('MainController', MainController)
     .service('ApiService',ApiService)
     .directive('foundItems', FoundItemsDirective)
-    .constant('ApiEndpoint',"http://davids-restaurant.herokuapp.com");
+    .constant('ApiEndpoint',"https://davids-restaurant.herokuapp.com");
 
 
     ApiService.$inject = ["$http", 'ApiEndpoint'];
