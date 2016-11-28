@@ -1,0 +1,8 @@
+<ul>
+    <li data-ng-repeat="f in foundItems">
+        {{f.short_name}} - {{f.name}}: {{f.special_instructions}} <button class="btn btn-danger" data-ng-click="remove({ idx: $index})">Don't want this one!</button>
+    </li>
+</ul>
+<div class="alert alert-danger" ng-if="foundItems.length == 0">
+    Nothing found    
+</div>
